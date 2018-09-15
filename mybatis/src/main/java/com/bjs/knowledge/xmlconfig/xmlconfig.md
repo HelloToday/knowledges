@@ -49,10 +49,6 @@ MyBatis中的缓存分为两种：一级缓存和二级缓存。使用过MyBatis
 <font color=red>你的内容</font>
 
 ## redis的缓存回收策略是啥？
-```plantuml
-digraph Test {
-A -> B
-}
-```
+
 
 ## 领域模型是什么
