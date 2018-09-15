@@ -46,7 +46,27 @@
 MyBatis中使用缓存来提高其性能。
 MyBatis中的缓存分为两种：一级缓存和二级缓存。使用过MyBatis的可能听到过这样一句话“一级缓存是sqlSession级别的，二级缓存是mapper级别的”。这也说明了，当使用同一个sqlSession时，查询到的数据可能是一级缓存；而当使用同一个mapper是，查询到的数据可能是二级缓存。
 
-<font color=red>你的内容</font>
+``下面是我理解的知识点：所谓的local就是只在一次会话当中有作用，mybatis默认的开启级别就是这个，
+但是他有没有问题呢？当然有。比如说同一个sql在不同的sqlsession当中用到了 但是由于他的界别是local的无法在不同的的sqlsession当中共享所以他是没有作用的。
+当我们的配置文件配置了cacheEnabled=true时，就会开启二级缓存，二级缓存是mapper级别的，也就说不同的sqlsession使用同一个mapper查询是，查询到的数据可能是另一个sqlsession做相同操作留下的缓存。
+
+而二级缓存的是这样的：SqlSession对象创建Executor对象时，会对Executor对象加上一个装饰者：CachingExecutor，然后将操作数据库的任务交给CachingExecutor，此时CachingExecutor会查找二级缓存是否有需要的数据，如果没有则将任务交给Executor对象。
+``
+
+## 动态SQL
+
+- if
+- choose, when, otherwise
+
+
+## 注解
+
+注意 不幸的是，Java 注解的的表达力和灵活性十分有限。尽管很多时间都花在调查、设计和试验上，最强大的 MyBatis 映射并不能用注解来构建——并不是在开玩笑，的确是这样。比方说，C#属性就没有这些限制，因此 MyBatis.NET 将会比 XML 有更丰富的选择。也就是说，基于 Java 注解的配置离不开它的特性。
+  
+
+## sql语句构建器
+
+
 
 ## redis的缓存回收策略是啥？
 
