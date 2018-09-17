@@ -1,4 +1,4 @@
-package com.bjs.knowledge.degisnmodel.observer;
+package com.bjs.knowledge.designmodel.observer;
 
 public class Main {
     public static void main(String[] args){

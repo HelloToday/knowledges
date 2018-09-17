@@ -1,4 +1,4 @@
-package com.bjs.knowledge.degisnmodel.prototype;
+package com.bjs.knowledge.designmodel.prototype;
 
 public abstract class Propotype{
     private String id;

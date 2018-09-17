@@ -1,4 +1,4 @@
-package com.bjs.knowledge.degisnmodel.observer;
+package com.bjs.knowledge.designmodel.observer;
 
 import java.util.ArrayList;
 import java.util.List;
