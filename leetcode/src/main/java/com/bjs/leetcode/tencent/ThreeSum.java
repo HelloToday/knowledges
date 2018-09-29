@@ -1,4 +1,4 @@
-package com.bjs.leetcode;
+package com.bjs.leetcode.tencent;
 
 import java.util.ArrayList;
 import java.util.Arrays;
