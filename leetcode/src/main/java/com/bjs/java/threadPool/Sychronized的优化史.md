@@ -36,12 +36,21 @@
 
 文章来源：https://blog.csdn.net/liujia110/article/details/56484933
 
+https://www.cnblogs.com/wuyx/p/8710825.html（介绍了一个淘宝的面试题）
 
-
-
+https://yq.aliyun.com/articles/143211
 
 ## 注意点
 
 1. 注意不要锁字符串，字符串存储在常量池里面。
 
 2. **避免被锁定的对象引用发生改变**
+
+
+
+
+
+### Todo
+
+ 熟练了解并发包里面的各个类各个场景和方法
+
