@@ -12,3 +12,6 @@ select * from t_lon_account;
 
 ####费用信息查询
  select  *  from t_loan_fee_info ；
+ 
+ ####查询对应关系表
+ select * from t_lon_application_contract t 
